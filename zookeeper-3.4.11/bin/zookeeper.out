@@ -1,0 +1,19 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/E:/resources/zookeeper-3.4.11/build/lib/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/E:/resources/zookeeper-3.4.11/lib/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+2018-05-16 15:55:02,983 [myid:] - INFO  [main:QuorumPeerConfig@136] - Reading configuration from: ..\conf\zoo1.cfg
+2018-05-16 15:55:02,994 [myid:] - INFO  [main:QuorumPeer$QuorumServer@184] - Resolved hostname: 172.30.61.78 to address: /172.30.61.78
+2018-05-16 15:55:02,994 [myid:] - INFO  [main:QuorumPeer$QuorumServer@184] - Resolved hostname: 172.30.61.78 to address: /172.30.61.78
+2018-05-16 15:55:02,994 [myid:] - INFO  [main:QuorumPeer$QuorumServer@184] - Resolved hostname: 172.30.61.78 to address: /172.30.61.78
+2018-05-16 15:55:02,994 [myid:] - INFO  [main:QuorumPeerConfig@398] - Defaulting to majority quorums
+2018-05-16 15:55:02,995 [myid:] - ERROR [main:QuorumPeerMain@88] - Invalid config, exiting abnormally
+org.apache.zookeeper.server.quorum.QuorumPeerConfig$ConfigException: Error processing ../conf/zoo1.cfg
+	at org.apache.zookeeper.server.quorum.QuorumPeerConfig.parse(QuorumPeerConfig.java:156)
+	at org.apache.zookeeper.server.quorum.QuorumPeerMain.initializeAndRun(QuorumPeerMain.java:104)
+	at org.apache.zookeeper.server.quorum.QuorumPeerMain.main(QuorumPeerMain.java:81)
+Caused by: java.lang.IllegalArgumentException: E:\resources\zookeeper-3.4.11\conf\data\1\myid file is missing
+	at org.apache.zookeeper.server.quorum.QuorumPeerConfig.parseProperties(QuorumPeerConfig.java:408)
+	at org.apache.zookeeper.server.quorum.QuorumPeerConfig.parse(QuorumPeerConfig.java:152)
+	... 2 more
+Invalid config, exiting abnormally
